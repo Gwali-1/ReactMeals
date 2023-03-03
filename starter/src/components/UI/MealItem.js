@@ -1,5 +1,5 @@
 import classes from "./MealItem.module.css"; 
-
+import MealItemForm from "./MealItemForm";
 function MealItem(props){
   
   return (
@@ -19,8 +19,9 @@ function MealItem(props){
       </div>
 
       <div>
-          
-      </div>
+      {/* form element goes here */}
+       <MealItemForm id={props.id}/> 
+     </div>
     </li>
   )
   
