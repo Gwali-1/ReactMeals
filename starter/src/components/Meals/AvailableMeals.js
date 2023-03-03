@@ -36,8 +36,7 @@ function AvailableMeals(){
     <section className={classes.meals}>
     <Card>
       <ul>
-        { DUMMY_MEALS.map(meal => <MealItem id={meal.id} meals={meal} />)}
-      </ul>
+        { DUMMY_MEALS.map(meal => <MealItem id={meal.id} meals={meal} />)} </ul>
     </Card>
     </section>
   )
