@@ -1,11 +1,13 @@
 import classes from "./Modal.module.css";
 import {Fragment} from "react";
+
+
+ 
 function Backdrop(props){
   return (
-    <div className={classes.backdrop}></div>
+    <div onClick={props.onClick} className={classes.backdrop}></div>
   )
 }
-
 
 function ModalOverlay(props){
   return (
@@ -18,10 +20,9 @@ function ModalOverlay(props){
 
 
  
-function Modal(props) {
- return(
+function Modal(props) { return(
   <>
-    <Backdrop/>
+    <Backdrop  onClick={props.onClick}/>
     <ModalOverlay>{props.children}</ModalOverlay>
   </>
  )
